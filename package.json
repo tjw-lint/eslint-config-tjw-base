@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-tjw-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "The Jared Wilcurt's base linting rules",
+  "author": "The Jared Wilcurt",
+  "keywords": [
+    "tjw",
+    "eslint",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tjw-lint/eslint-config-tjw-base.git"
+  },
+  "homepage": "https://github.com/tjw-lint/eslint-config-tjw-base#readme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tjw-lint/eslint-config-tjw-base/issues"
+  }
+}

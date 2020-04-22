@@ -14,3 +14,10 @@ The Jared Wilcurt's base ESLint rules
       ]
     };
     ```
+
+* * *
+
+**See also:**
+
+* [eslint-config-tjw-jest](https://github.com/tjw-lint/eslint-config-tjw-jest)
+* [eslint-config-tjw-vue](https://github.com/tjw-lint/eslint-config-tjw-vue)

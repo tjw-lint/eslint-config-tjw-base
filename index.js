@@ -48,6 +48,13 @@ module.exports = {
         'SwitchCase': 1
       }
     ],
+    'key-spacing': [
+      'error',
+      {
+        'afterColon': true,
+        'beforeColon': false
+      }
+    ],
     'keyword-spacing': [
       'error',
       {
@@ -82,6 +89,10 @@ module.exports = {
     'quotes': [
       'error',
       'single'
+    ],
+    'quote-props': [
+      'error',
+      'as-needed'
     ],
     'semi': [
       'error',

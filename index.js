@@ -1,13 +1,13 @@
-// JS
 module.exports = {
-  'parserOptions': {
-    'sourceType': 'module'
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: 'module'
   },
-  'env': {
-    'browser': true,
-    'node': true
+  env: {
+    browser: true,
+    node: true
   },
-  'rules': {
+  rules: {
     'arrow-parens': [
       'off'
     ],
@@ -15,7 +15,7 @@ module.exports = {
       'error',
       '1tbs',
       {
-        'allowSingleLine': true
+        allowSingleLine: true
       }
     ],
     'comma-dangle': [
@@ -25,15 +25,15 @@ module.exports = {
     'comma-spacing': [
       'error',
       {
-        'before': false,
-        'after': true
+        before: false,
+        after: true
       }
     ],
     'comma-style': [
       'error',
       'last'
     ],
-    'curly': [
+    curly: [
       'error'
     ],
     // allow async-await
@@ -41,25 +41,25 @@ module.exports = {
       'off'
     ],
     // 2 space indentation (should match .editorconfig)
-    'indent': [
+    indent: [
       'error',
       2,
       {
-        'SwitchCase': 1
+        SwitchCase: 1
       }
     ],
     'key-spacing': [
       'error',
       {
-        'afterColon': true,
-        'beforeColon': false
+        afterColon: true,
+        beforeColon: false
       }
     ],
     'keyword-spacing': [
       'error',
       {
-        'before': true,
-        'after': true
+        before: true,
+        after: true
       }
     ],
     // allow debugger during development
@@ -90,7 +90,7 @@ module.exports = {
       'error',
       'never'
     ],
-    'quotes': [
+    quotes: [
       'error',
       'single'
     ],
@@ -98,7 +98,7 @@ module.exports = {
       'error',
       'as-needed'
     ],
-    'semi': [
+    semi: [
       'error',
       'always'
     ],

@@ -82,6 +82,10 @@ module.exports = {
       'error',
       'always'
     ],
+    'operator-linebreak': [
+      'error',
+      'after'
+    ],
     'one-var': [
       'error',
       'never'

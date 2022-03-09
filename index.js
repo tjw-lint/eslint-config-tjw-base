@@ -80,19 +80,17 @@ module.exports = {
     'no-multiple-empty-lines': [
       'error',
       {
-        'max': 2,
-        'maxBOF': 0,
-        'maxEOF': 0
+        max: 2,
+        maxBOF: 0,
+        maxEOF: 0
       }
     ],
     'no-restricted-syntax': [
       'error',
-      [
-        {
-          'selector': 'Property[method="true"]',
-          'message': 'No shortform methods. x: function (). not x()'
-        }
-      ]
+      {
+        selector: 'Property[method="true"]',
+        message: 'No shortform methods. x: function (). not x()'
+      }
     ],
     // Remove unused defined variables
     'no-unused-vars': [

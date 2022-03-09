@@ -112,6 +112,11 @@ module.exports = {
       'error',
       'never'
     ],
+    // Don't have returns as the first or last character in a function or if statement
+    'padded-blocks': [
+      'error',
+      'never'
+    ],
     // Single quotes are used by ~80% of the JS community
     quotes: [
       'error',

@@ -9,11 +9,31 @@ The Jared Wilcurt's base ESLint rules
 1. In your `.eslintrc.js` add `tjw-base` to your `extends` like so:
     ```js
     module.exports = {
-      'extends': [
+      extends: [
         'tjw-base'
       ]
     };
     ```
+
+If you already have a `no-restricted-syntax` rule, you can merge the ones that come with this config with your own, like so:
+
+```js
+// .eslintrc.js
+const baseRestrictedSyntax = require('eslint-config-tjw-base/no-restricted-syntax.json');
+
+module.exports = {
+  extends: [
+    'tjw-base'
+  ],
+  rules: {
+    'no-restricted-syntax': [
+      'error',
+      ...baseRestrictedSyntax,
+      // your custom rules
+    ]
+  }
+};
+```
 
 * * *
 

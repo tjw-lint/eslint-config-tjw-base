@@ -85,6 +85,15 @@ module.exports = {
         'maxEOF': 0
       }
     ],
+    'no-restricted-syntax': [
+      'error',
+      [
+        {
+          'selector': 'Property[method="true"]',
+          'message': 'No shortform methods. x: function (). not x()'
+        }
+      ]
+    ],
     // Remove unused defined variables
     'no-unused-vars': [
       'error'

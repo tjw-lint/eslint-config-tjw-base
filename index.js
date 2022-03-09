@@ -75,6 +75,8 @@ module.exports = {
     'no-multi-spaces': [
       'error'
     ],
+    // No empty lines at top or bottom or file (except 1 EOF for git)
+    // and no more than 2 empty returns in a file
     'no-multiple-empty-lines': [
       'error',
       {

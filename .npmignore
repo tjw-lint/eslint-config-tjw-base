@@ -1,2 +1,5 @@
-test.js
+.git
+node_modules
 .gitignore
+CODE_OF_CONDUCT.md
+test.js

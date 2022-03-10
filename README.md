@@ -15,7 +15,7 @@ The Jared Wilcurt's base ESLint rules
     };
     ```
 
-If you already have a `no-restricted-syntax` rule, you can merge in these with
+If you already have a `no-restricted-syntax` rule, you can merge the ones that come with this config with your own, like so:
 
 ```js
 // .eslintrc.js
@@ -30,7 +30,7 @@ module.exports = {
       'error',
       ...baseRestrictedSyntax,
       // your custom rules
-    ],
+    ]
   }
 };
 ```

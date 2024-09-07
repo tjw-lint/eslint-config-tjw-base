@@ -10,31 +10,39 @@ For CJS and ESLint < v9, use v2.x releases.
 1. `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin-js`
 1. In your `eslint.config.js` add `tjw-base` to your `extends` like so:
     ```js
-    module.exports = {
-      extends: [
-        'tjw-base'
-      ]
-    };
+    import js from '@eslint/js';
+    import tjwBase from 'eslint-config-tjw-base';
+    
+    export default [
+      js.configs.recommended,
+      tjwBase,
+      {
+        // project specific settings
+      }
+    ];
     ```
 
 If you already have a `no-restricted-syntax` rule, you can merge the ones that come with this config with your own, like so:
 
 ```js
 // eslint.config.js
+import js from '@eslint/js';
 import baseRestrictedSyntax from 'eslint-config-tjw-base/no-restricted-syntax.js';
+import tjwBase from 'eslint-config-tjw-base';
 
-module.exports = {
-  extends: [
-    'tjw-base'
-  ],
-  rules: {
-    'no-restricted-syntax': [
-      'error',
-      ...baseRestrictedSyntax,
-      // your custom rules
-    ]
+export default [
+  js.configs.recommended,
+  tjwBase,
+  {
+    rules: {
+      'no-restricted-syntax': [
+        'error',
+        ...baseRestrictedSyntax,
+        // your custom rules
+      ]
+    }
   }
-};
+];
 ```
 
 

@@ -1,9 +1,11 @@
 const cow = true;
 const dog = false;
+const moo = 4;
 
 if (
-  cow &&
+  cow
+  &&
   dog
 ) {
-  alert('k');
+    alert('k')
 }

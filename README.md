@@ -1,12 +1,14 @@
 # eslint-config-tjw-base
 
-The Jared Wilcurt's base ESLint rules
+The Jared Wilcurt's base ESLint 9+ rules for ESM projects.
+
+For CJS and ESLint < v9, use v2.x releases.
 
 
 ## Using this
 
-1. `npm install --save-dev eslint eslint-config-tjw-base`
-1. In your `.eslintrc.js` add `tjw-base` to your `extends` like so:
+1. `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin-js`
+1. In your `eslint.config.js` add `tjw-base` to your `extends` like so:
     ```js
     module.exports = {
       extends: [
@@ -18,8 +20,8 @@ The Jared Wilcurt's base ESLint rules
 If you already have a `no-restricted-syntax` rule, you can merge the ones that come with this config with your own, like so:
 
 ```js
-// .eslintrc.js
-const baseRestrictedSyntax = require('eslint-config-tjw-base/no-restricted-syntax.json');
+// eslint.config.js
+import baseRestrictedSyntax from 'eslint-config-tjw-base/no-restricted-syntax.js';
 
 module.exports = {
   extends: [

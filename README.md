@@ -7,7 +7,9 @@ For CJS and ESLint < v9, use v2.x releases.
 
 ## Using this
 
-1. `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin-js`
+1. If you don't have a `package.json` do `npm init -y` first
+1. Run `npm pkg set type=module`
+1. Run `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin-js`
 1. In your `eslint.config.js` add `tjwBase` to your config like so:
     ```js
     import js from '@eslint/js';
@@ -21,6 +23,9 @@ For CJS and ESLint < v9, use v2.x releases.
       }
     ];
     ```
+1. Run `npm pkg set scripts.lint="eslint *.js src"`
+   * Change `*.js src` to your files and folders you want to be linted
+1. Run `npm run lint`
 
 If you already have a `no-restricted-syntax` rule, you can merge the ones that come with this config with your own, like so:
 

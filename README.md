@@ -8,7 +8,7 @@ For CJS and ESLint < v9, use v2.x releases.
 ## Using this
 
 1. `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin-js`
-1. In your `eslint.config.js` add `tjw-base` to your `extends` like so:
+1. In your `eslint.config.js` add `tjwBase` to your config like so:
     ```js
     import js from '@eslint/js';
     import tjwBase from 'eslint-config-tjw-base';

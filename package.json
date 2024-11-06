@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-tjw-base",
   "type": "module",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "main": "index.js",
   "description": "The Jared Wilcurt's base linting rules",
   "scripts": {
@@ -12,8 +12,8 @@
     "eslint": ">=9"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin-js": "^2.7.2",
-    "eslint": "^9.10.0"
+    "@stylistic/eslint-plugin-js": "^2.10.1",
+    "eslint": "^9.14.0"
   },
   "author": "The Jared Wilcurt",
   "keywords": [
@@ -31,6 +31,6 @@
     "url": "https://github.com/tjw-lint/eslint-config-tjw-base/issues"
   },
   "volta": {
-    "node": "22.8.0"
+    "node": "22.11.0"
   }
 }

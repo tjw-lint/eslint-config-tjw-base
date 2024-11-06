@@ -21,6 +21,14 @@ export default {
       'error',
       'always'
     ],
+    // () => {} not ()=>{}
+    '@stylistic/js/arrow-spacing': [
+      'error',
+      {
+        before: true,
+        after: true
+      }
+    ],
     // } else { not }\n else {
     '@stylistic/js/brace-style': [
       'error',

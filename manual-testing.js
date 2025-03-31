@@ -9,3 +9,9 @@ if (
 ) {
     alert('k')
 }
+
+console.log({
+  foo() {
+    return true;
+  }
+});

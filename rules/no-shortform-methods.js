@@ -11,7 +11,7 @@
 export default {
   meta: {
     type: 'layout',
-    // fixable: 'code',
+    fixable: 'code',
     docs: {
       description: 'Do not use shortform methods.',
       category: 'Stylistic Issues',
@@ -25,7 +25,16 @@ export default {
       'Property[method="true"]': function (node) {
         context.report({
           node,
-          message: 'Use `foo: function ()`, not `foo()`.'
+          message: 'Use `foo: function ()`, not `foo()`.',
+          fix: function (fixer) {
+            const sourceCode = context.getSourceCode();
+
+            const keyText = sourceCode.getText(node.key);
+            const valueText = sourceCode.getText(node.value);
+
+            const fixedText = keyText + ': function ' + valueText;
+            return fixer.replaceText(node, fixedText);
+          }
         });
       }
     };

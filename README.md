@@ -9,7 +9,7 @@ For CJS and ESLint < v9, use v2.x releases.
 
 1. If you don't have a `package.json` do `npm init -y` first
 1. Run `npm pkg set type=module`
-1. Run `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin-js`
+1. Run `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin`
 1. In your `eslint.config.js` add `tjwBase` to your config like so:
     ```js
     import js from '@eslint/js';

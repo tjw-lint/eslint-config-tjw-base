@@ -1,11 +1,12 @@
 {
   "name": "eslint-config-tjw-base",
   "type": "module",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "main": "index.js",
   "description": "The Jared Wilcurt's base linting rules",
   "scripts": {
-    "lint": "eslint manual-testing.js index.js"
+    "lint": "eslint manual-testing.js index.js",
+    "debug": "node --inspect-brk ./node_modules/eslint/bin/eslint.js manual-testing.js"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": ">=4",
@@ -27,7 +28,7 @@
     "url": "https://github.com/tjw-lint/eslint-config-tjw-base/issues"
   },
   "volta": {
-    "node": "24.1.0",
-    "npm": "11.4.1"
+    "node": "24.2.0",
+    "npm": "11.4.2"
   }
 }

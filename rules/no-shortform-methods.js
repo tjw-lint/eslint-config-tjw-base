@@ -29,10 +29,20 @@ export default {
           fix: function (fixer) {
             const sourceCode = context.getSourceCode();
 
+            // 'foo'
             const keyText = sourceCode.getText(node.key);
+            // '() { return 2; }'
             const valueText = sourceCode.getText(node.value);
+            // true || false
+            const isAsync = node.value.async;
 
-            const fixedText = keyText + ': function ' + valueText;
+            let fixedText;
+            if (isAsync) {
+              fixedText = keyText + ': async function ' + valueText;
+            } else {
+              fixedText = keyText + ': function ' + valueText;
+            }
+
             return fixer.replaceText(node, fixedText);
           }
         });

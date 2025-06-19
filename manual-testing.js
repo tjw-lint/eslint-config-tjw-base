@@ -11,6 +11,12 @@ if (
 }
 
 console.log({
+  async foo() {
+    return true;
+  }
+});
+
+console.log({
   foo() {
     return true;
   }

@@ -28,7 +28,7 @@
     "url": "https://github.com/tjw-lint/eslint-config-tjw-base/issues"
   },
   "volta": {
-    "node": "24.2.0",
-    "npm": "11.4.2"
+    "node": "24.9.0",
+    "npm": "11.6.1"
   }
 }

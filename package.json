@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-tjw-base",
   "type": "module",
-  "version": "4.4.0",
+  "version": "5.0.0",
   "main": "index.js",
   "description": "The Jared Wilcurt's base linting rules",
   "scripts": {
@@ -9,9 +9,13 @@
     "debug": "node --inspect-brk ./node_modules/eslint/bin/eslint.js manual-testing.js",
     "proto": "proto pin node latest --resolve --tool-native && proto pin npm latest --resolve --tool-native && npm i"
   },
+  "devDependencies": {
+    "@eslint/js": "^10",
+    "globals": "^17"
+  },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^4 || ^5",
-    "eslint": "^9 || ^10"
+    "eslint": "^10"
   },
   "author": "The Jared Wilcurt",
   "keywords": [
@@ -31,11 +35,11 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "25.8.2"
+      "version": "25.9.0"
     },
     "packageManager": {
       "name": "npm",
-      "version": "11.11.1"
+      "version": "11.12.1"
     }
   }
 }

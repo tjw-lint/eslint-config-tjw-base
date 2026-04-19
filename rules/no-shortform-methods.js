@@ -27,7 +27,7 @@ export default {
           node,
           message: 'Use `foo: function ()`, not `foo()`.',
           fix: function (fixer) {
-            const sourceCode = context.getSourceCode();
+            const sourceCode = context.sourceCode;
 
             // 'foo'
             const keyText = sourceCode.getText(node.key);

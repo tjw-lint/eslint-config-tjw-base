@@ -21,3 +21,17 @@ console.log({
     return true;
   }
 });
+
+
+const asdf = [
+];
+
+const qwer = [];
+
+const qwer2 = {
+};
+
+const qwer3 = {};
+
+console.log([asdf, qwer, qwer2, qwer3]);
+console.log({ asdf, qwer, qwer2, qwer3 });

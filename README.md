@@ -2,9 +2,14 @@
 
 The Jared Wilcurt's base ESLint 10+ rules for ESM projects.
 
-* For CJS and ESLint < v9, use v2 releases.
-* For ESLint v9, use v4 releases.
-* For ESLint v10, use v5 releases.
+**Release notes:**
+
+* v1 - CJS and ESLint < v9
+* v2 - CJS and ESLint < v9
+* v3 - ESLint v9
+* v4 - ESLint v9
+* v5 - ESLint v10, Stylistic v4 or v5
+* v6 - ESLint v10, Stylistic v6
 
 
 ## Using this

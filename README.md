@@ -4,8 +4,8 @@ The Jared Wilcurt's base ESLint 10+ rules for ESM projects.
 
 **Release notes:**
 
-* v1 - CJS and ESLint < v9
-* v2 - CJS and ESLint < v9
+* v1 - ESLint v6, v7, or v8 (CJS)
+* v2 - ESLint v6, v7, or v8 (CJS)
 * v3 - ESLint v9, Stylistic v2
 * v4 - ESLint v9, Stylistic v3
 * v5 - ESLint v10, Stylistic v4 or v5

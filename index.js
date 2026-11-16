@@ -103,9 +103,20 @@ Object.assign(pluginTjwBase.configs, {
       '@stylistic/js/list-style': [
         'error',
         {
-          empty: 'never',
+          empty: 'ignore',
+          singleLine: {
+            spacing: 'never',
+            maxItems: Number.POSITIVE_INFINITY
+          },
           multiLine: {
-            minItems: 1
+            minItems: 0
+          },
+          overrides: {
+            '{}': {
+              singleLine: {
+                spacing: 'always'
+              }
+            }
           }
         }
       ],

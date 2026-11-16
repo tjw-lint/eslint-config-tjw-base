@@ -14,7 +14,7 @@ The Jared Wilcurt's base ESLint 10+ rules for ESM projects.
 1. Run `npm install --save-dev eslint eslint-config-tjw-base @stylistic/eslint-plugin`
    * **Requires:**
       * `eslint` >=10.0.0
-      * `@stylistic/eslint-plugin` >=4.0.0
+      * `@stylistic/eslint-plugin` >=6.0.0
 1. In your `eslint.config.js` add `tjwBase` to your config like so:
     ```js
     import js from '@eslint/js';

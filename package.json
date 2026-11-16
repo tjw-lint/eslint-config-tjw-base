@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-tjw-base",
   "type": "module",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "main": "index.js",
   "description": "The Jared Wilcurt's base linting rules",
   "scripts": {
@@ -10,7 +10,7 @@
     "proto": "proto pin node latest --resolve --tool-native && proto pin npm latest --resolve --tool-native && npm i"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^4 || ^5 || ^6",
+    "@stylistic/eslint-plugin": "^6",
     "@eslint/js": "^10",
     "globals": "^17"
   },

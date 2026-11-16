@@ -98,6 +98,17 @@ Object.assign(pluginTjwBase.configs, {
           after: true
         }
       ],
+      // Curly braces start and end should match in a sane way.
+      // Replaces deprecated @stylistic/js/object-curly-spacing:[error,always]
+      '@stylistic/js/list-style': [
+        'error',
+        {
+          empty: 'never',
+          multiLine: {
+            minItems: 1
+          }
+        }
+      ],
       // let a = 1; not let a =     1;
       '@stylistic/js/no-multi-spaces': [
         'error'
@@ -111,11 +122,6 @@ Object.assign(pluginTjwBase.configs, {
           maxBOF: 0,
           maxEOF: 0
         }
-      ],
-      // Curly braces start and end should match in a sane way
-      '@stylistic/js/object-curly-spacing': [
-        'error',
-        'always'
       ],
       // Consistent operator placement on multiple lines
       '@stylistic/js/operator-linebreak': [
